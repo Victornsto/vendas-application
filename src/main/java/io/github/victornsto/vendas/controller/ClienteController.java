@@ -34,7 +34,7 @@ public class ClienteController {
 
     @GetMapping()
     public List<Cliente> findAllClientes() {
-        return (List<Cliente>) repository.findAll();
+        return repository.findAll();
     }
 
     @DeleteMapping("{id}")
